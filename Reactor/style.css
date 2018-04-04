@@ -1,0 +1,10 @@
+#shape {
+    height: 120px;
+    width: 120px;
+    background-color: red;
+    position: relative;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

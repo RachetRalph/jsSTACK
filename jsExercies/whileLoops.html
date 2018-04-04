@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h3>How Many Fingers are you Holding Up?</h3>
+        <p>
+        <select id="myNum">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <button id="guess">GUESS</button> 
+            
+         </p>
+        <script>
+            function doAGuess (correctAns) {
+                
+            }
+
+            document.getElementById("guess").onclick = function () {
+                
+                var myNumber = document.getElementById("myNum").value;
+
+                var gotIt = false;
+
+                var numOfGuesses = 1;
+
+                while (gotIt == false) {
+
+                    var guess = (Math.floor(Math.random() * 6));
+
+                    if (guess == myNumber){
+
+                        gotIt = true;
+
+                        alert("Got It! It was a " + guess + ". It took me " + numOfGuesses + " guesses.");
+                        // computer is correct
+                    } else {
+                        numOfGuesses++;
+                    }
+                }
+            }
+     
+
+        </script>
+</body>
+</html>

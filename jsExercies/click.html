@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CLick</title>
+</head>
+<body>
+    <p id='text'>Hello World</p>
+
+    <button id='myButton'>Change Text</button>
+
+    <p id='secondP'> JavaScript is.....</p>
+    
+    <button id='secButton'>Change Me</button>
+
+    <p id='emptyP'></p>
+
+    <button id='thirdButton'>Create Text</button>
+
+    <p id='plainText'>This is some gibberish i tell ya!</p>
+
+    <button id='style'>Bedazzle Me</button>
+
+    <script>
+    
+    document.getElementById("myButton").onclick = function() {
+
+        document.getElementById("text").innerHTML = "Hello RalphieBouy!";
+    }
+
+    document.getElementById('secButton').onclick = function( ){
+
+        document.getElementById('secondP').innerHTML = "I think " + document.getElementById('secondP').innerHTML  + "AWESOME!";
+    }
+    
+    document.getElementById('thirdButton').onclick = function( ){
+
+        document.getElementById('emptyP').innerHTML = "I think " + document.getElementById('secondP').innerHTML  + "<h2>AWESOME!</h2>";
+    }
+    
+    document.getElementById('style').onclick = function(){
+
+        document.getElementById('plainText').style.display  = "none";
+    }
+    </script> 
+</body>
+</html>

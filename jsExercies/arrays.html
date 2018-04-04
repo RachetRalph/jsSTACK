@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+        var myArray = new Array();
+
+        myArray[0] = "Pizza";
+        myArray[1] = "Chocolate";
+
+        var tweets = ["Good Morning America!"," I Love Caffe!"];
+
+        tweets.push("Lets get to work!");
+       
+        // splice function (int1, int2): where int1 = starting point of splice, and int2 = upto point of splice.
+        // You can add stuff using a splice function as well. 
+        // If second value is set to 0, it will not delete anything.
+        tweets.splice(1,1,"I eat pussy for breakfast!","making num num sounds");
+
+        console.log(tweets);
+    </script>
+</body>
+</html>

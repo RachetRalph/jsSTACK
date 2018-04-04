@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClickToDisappear</title>
+</head>
+<body>
+    <style>
+        .circ{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            float: left;
+            margin-left:5%
+
+        }
+
+        #redC{
+            background-color: red;
+        }
+
+        #blueC{
+            background-color: blue;
+        }
+
+        #yellowC{
+            background-color: yellow;
+        }
+    </style>
+
+    <div class="circ" id="redC"></div>
+    <div class="circ" id="blueC"></div>
+    <div class="circ" id="yellowC"></div>
+    
+    <script>
+    document.getElementById('redC').onclick = function(){
+        document.getElementById('redC').style.display = "none";
+    }
+    
+    document.getElementById('blueC').onclick = function(){
+        document.getElementById('blueC').style.display = "none";
+    }
+    
+    document.getElementById('yellowC').onclick = function(){
+        document.getElementById('yellowC').style.display = "none";
+    }
+    
+    </script>
+</body>
+</html>

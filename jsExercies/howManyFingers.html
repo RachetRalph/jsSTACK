@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>How Many Fingers am I Holding Up?</h3>
+    <p><input id="HowManyFings" type="text"></p>
+    <p><button id="guess">GUESS</button> </p>
+
+    <script>
+        // Function generates random number 
+    document.getElementById("guess").onclick = function () {
+        var rando = (Math.floor(Math.random() * 5) + 1);
+        var input = document.getElementById("HowManyFings").value;
+        // If statements Responds to users guess!
+            if (rando == input) {
+                alert("Correct Guess!");
+            } else {
+                alert("Oops! The Number was " + rando);
+            }
+
+
+    }
+    
+    
+    </script>
+</body>
+</html>
